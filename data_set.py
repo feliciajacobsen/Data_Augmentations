@@ -11,6 +11,11 @@ import glob
 
 
 def make_labels():
+    """
+    Function extracts the ground-truth lables of the images
+    based on their filename and stores in a separate 
+    .csv-file.
+    """
     filenames = os.listdir("./data/images/")
     categories = []
     for filename in filenames:
